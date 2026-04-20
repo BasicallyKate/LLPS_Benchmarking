@@ -1,0 +1,7 @@
+python LLPhyScore_standalone.py -i ./file_name.fasta
+
+picnic false './alphafold_files_directory' 'name_of_alphafold_file' false --path_fasta_file './file_name.fasta'
+
+PSPire.py -d $./alphafold_files_directory -o results.csv
+
+psap predict -f ./file_name.fasta -m  -o ./results.csv
